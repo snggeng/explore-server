@@ -2,12 +2,12 @@ const config = {
   'production': {
     'PORT': 8080,
     'secret': process.env.PRODUCTION_SECRET,
-    'database': process.env.MONGOLAB_URI,
+    'database': process.env.MONGODB_URI,
   },
   'development': {
     'PORT': 3000,
     'secret': process.env.DEVELOPMENT_SECRET,
-    'database': process.env.MONGOLAB_URI,
+    'database': process.env.MONGODB_URI,
   },
   'test': {
     'PORT': 3001,
