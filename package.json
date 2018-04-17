@@ -19,9 +19,6 @@
     "url": "https://github.com/duke-compsci290-spring2018/assignments-portfolio-snggeng/issues"
   },
   "homepage": "https://github.com/duke-compsci290-spring2018/assignments-portfolio-snggeng#readme",
-  "engines": {
-    "node": "8.9.0"
-  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
