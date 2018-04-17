@@ -131,7 +131,9 @@ app.use((err, req, res, next) => {
   })
 })
 
-if(!module.parent){
+app.listen(process.env.PORT || 3000)
+
+// if(!module.parent){
   // https encryption
   // if (process.env.NODE_ENV === 'production') {
   //   https.createServer({
@@ -139,8 +141,8 @@ if(!module.parent){
   //     key: fs.readFileSync('/etc/letsencrypt/live/vcm-4000.vm.duke.edu/privkey.pem')
   //   }, app).listen(443)
   // } else {
-    app.listen(config.PORT || 3000)
+  // app.listen(process.env.PORT || 3000)
   // }
-}
+// }
 
 module.exports = app
