@@ -1,0 +1,39 @@
+{
+  "name": "explore project",
+  "version": "1.0.0",
+  "description": "explore project"
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV='development' nodemon app.js",
+    "start-prod": "NODE_ENV='production' sudo nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duke-compsci290-spring2018/assignments-portfolio-snggeng.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duke-compsci290-spring2018/assignments-portfolio-snggeng/issues"
+  },
+  "homepage": "https://github.com/duke-compsci290-spring2018/assignments-portfolio-snggeng#readme",
+  "engines": {
+    "node": "8.9.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.14",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "npm": "^5.8.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
