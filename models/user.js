@@ -16,8 +16,8 @@ const UserSchema = new Schema({
   },
   role: {
     type: String,
-    default: 'admin',
-    enum: ['admin', 'manager', 'user'],
+    default: 'user',
+    enum: ['admin', 'user'],
     required: true
   },
   netId: {
