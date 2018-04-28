@@ -15,6 +15,7 @@ const createBottle = (req, res, next) => {
       message: req.body.message,
       createdBy: req.body.createdBy
     })
+    User.findByIdAndUpdate({_id: req.body.createdBy},{ $push: { bottles: newBottle._id }}, )
     // save bottle
     newBottle.save((err) => {
       if (err) return next(err)
