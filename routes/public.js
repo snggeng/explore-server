@@ -19,6 +19,7 @@ router.route('/users')
 
 // BOTTLE ROUTES
 router.get('/bottles/:id', bottleController.getBottle)
+router.get('/bottles', bottleController.getAll)
 router.put('/bottles/:id', bottleController.updateBottle)
 
 module.exports = router
