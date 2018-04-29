@@ -18,7 +18,7 @@ router.route('/users')
   .post(userController.createUser)
 
 // BOTTLE ROUTES
-router.get('/bottles/:id', permit('admin', 'user'), bottleController.getBottle)
-router.put('/bottles/:id', permit('admin', 'user'), bottleController.updateBottle)
+router.get('/bottles/:id', bottleController.getBottle)
+router.put('/bottles/:id', bottleController.updateBottle)
 
 module.exports = router
