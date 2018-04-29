@@ -16,7 +16,8 @@ const createUser = (req, res, next) => {
     let newUser = new User({
       username: req.body.username,
       password: req.body.password,
-      role: req.body.role
+      role: req.body.role,
+      display: req.body.display
     })
     if (req.body.first_name !== undefined) newUser.first_name = req.body.first_name
     if (req.body.last_name !== undefined) newUser.last_name = req.body.last_name

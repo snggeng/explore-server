@@ -28,6 +28,9 @@ const UserSchema = new Schema({
   bottles: {
     type: [String],
   },
+  display: {
+    type: String
+  },
   first_name: {
     type: String
   },
